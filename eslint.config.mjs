@@ -9,4 +9,10 @@ export default defineConfig([
   { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
   { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], languageOptions: { globals: globals.node } },
   tseslint.configs.recommended,
+  {rules: {
+    "@typescript-eslint/no-require-imports": "off"
+  }},
+  {
+    ignores: [".node_modules/*"]
+},
 ]);
