@@ -16,5 +16,5 @@ if (cluster.isPrimary) {
     cluster.fork();
   });
 } else {
-  require('./worker'); // Each worker runs this
+  require('./src/worker'); // Each worker runs this
 }
